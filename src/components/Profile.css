@@ -1,0 +1,88 @@
+body {
+  background-color: rgb(199, 233, 241);
+  margin: 0;
+  padding: 50px 0 0 50px;
+}
+
+.Profile {
+  width: 250px;
+  min-height: 300px;
+  background-color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(144, 144, 144);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+  margin-bottom: 30px;
+}
+
+.Profile-description {
+  height: 220px;
+  padding-top: 10px;
+}
+
+.Profile-avatar {
+  border-radius: 50%;
+}
+
+.Profile-name {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  color: black;
+}
+
+
+.Profile-tag,
+.Profile-location {
+  font-weight: lighter;
+  margin: 0;
+}
+
+.Profile-tag {
+  margin: 0 0 10px 0;
+}
+
+.Profile-stats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-top: 1px solid rgb(68, 68, 68);
+}
+
+.Profile-statsItem {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 33%;
+  height: 100%;
+  font-weight: lighter;
+  background-color: rgb(199, 233, 241);
+
+}
+
+.Profile-statsItem:not(:last-child) {
+  border-right: 1px solid rgb(68, 68, 68);
+}
+
+.Profile-statsItem--first {
+  margin-bottom: 5px;
+
+}
+
+.Profile-statsItem--second {
+  font-weight: normal;
+  color: black;
+}
