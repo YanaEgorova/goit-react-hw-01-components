@@ -6,10 +6,8 @@ import randomColorGenerator from '../../randomColorGenerator';
 function Statistics({ title, stats }) {
   return (
     <section className="Statistics">
-      {' '}
-      {title && <h2 className="Statistics-title"> {title} </h2>}{' '}
+      {title && <h2 className="Statistics-title"> {title} </h2>}
       <ul className="Statistics-list">
-        {' '}
         {stats.map(stat => (
           <li
             className="Statistics-item"
@@ -18,14 +16,13 @@ function Statistics({ title, stats }) {
               backgroundColor: randomColorGenerator(),
             }}
           >
-            <span className="Statistics-span--first"> {stat.label} </span>{' '}
+            <span className="Statistics-span--first"> {stat.label} </span>
             <span className="Statistics-span--second">
-              {' '}
-              {stat.percentage} %{' '}
-            </span>{' '}
+              {stat.percentage} %
+            </span>
           </li>
-        ))}{' '}
-      </ul>{' '}
+        ))}
+      </ul>
     </section>
   );
 }
