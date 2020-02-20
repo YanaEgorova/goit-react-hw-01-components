@@ -9,10 +9,9 @@ function FriendListItem({ avatar, name, isOnline }) {
         className="FriendListItem-status"
         style={{ backgroundColor: isOnline ? 'green' : 'red' }}
       >
-        {' '}
-      </span>{' '}
+      </span>
       <img className="FriendListItem-avatar" src={avatar} alt="" width="48" />
-      <p className="FriendListItem-name"> {name} </p>{' '}
+      <p className="FriendListItem-name"> {name} </p>
     </li>
   );
 }
