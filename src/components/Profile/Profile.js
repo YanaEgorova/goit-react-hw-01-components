@@ -13,42 +13,37 @@ function Profile({ name, tag, location, avatar, stats }) {
                     alt="user avatar"
                     className="Profile-avatar"
                 />
-                <p className="Profile-name"> {name} </p>{' '}
-                <p className="Profile-tag"> @ {tag} </p>{' '}
-                <p className="Profile-location"> {location} </p>{' '}
-            </div>{' '}
+                <p className="Profile-name"> {name} </p>
+                <p className="Profile-tag"> @ {tag} </p>
+                <p className="Profile-location"> {location} </p>
+            </div>
             <ul className="Profile-stats">
                 <li className="Profile-statsItem">
                     <span className="Profile-statsItem--first">
-                        {' '}
-                        {statsKeys[0]}{' '}
-                    </span>{' '}
+                       
+                        {statsKeys[0]}
+                    </span>
                     <span className="Profile-statsItem--second">
-                        {' '}
-                        {statsValues[0]}{' '}
-                    </span>{' '}
-                </li>{' '}
+                        {statsValues[0]}
+                    </span>
+                </li>
                 <li className="Profile-statsItem">
                     <span className="Profile-statsItem--first">
-                        {' '}
-                        {statsKeys[1]}{' '}
-                    </span>{' '}
+                        {statsKeys[1]}
+                    </span>
                     <span className="Profile-statsItem--second">
-                        {' '}
-                        {statsValues[1]}{' '}
-                    </span>{' '}
-                </li>{' '}
+                        {statsValues[1]}
+                    </span>
+                </li>
                 <li className="Profile-statsItem">
                     <span className="Profile-statsItem--first">
-                        {' '}
-                        {statsKeys[2]}{' '}
-                    </span>{' '}
+                        {statsKeys[2]}
+                    </span>
                     <span className="Profile-statsItem--second">
-                        {' '}
-                        {statsValues[2]}{' '}
-                    </span>{' '}
-                </li>{' '}
-            </ul>{' '}
+                        {statsValues[2]}
+                    </span>
+                </li>
+            </ul>
         </div>
     );
 }
