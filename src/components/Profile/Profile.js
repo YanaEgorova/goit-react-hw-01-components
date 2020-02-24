@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import './Profile.css';
 
 function Profile({ name, tag, location, avatar, stats }) {
-    const statsKeys = Object.keys(stats);
-    const statsValues = Object.values(stats);
     return (
         <div className="Profile">
             <div className="Profile-description">
@@ -19,29 +17,16 @@ function Profile({ name, tag, location, avatar, stats }) {
             </div>
             <ul className="Profile-stats">
                 <li className="Profile-statsItem">
-                    <span className="Profile-statsItem--first">
-                       
-                        {statsKeys[0]}
-                    </span>
-                    <span className="Profile-statsItem--second">
-                        {statsValues[0]}
-                    </span>
+                    <span className="Profile-statsItem--first">Followers</span>
+                    <span className="Profile-statsItem--second">{stats.followers}</span>
                 </li>
                 <li className="Profile-statsItem">
-                    <span className="Profile-statsItem--first">
-                        {statsKeys[1]}
-                    </span>
-                    <span className="Profile-statsItem--second">
-                        {statsValues[1]}
-                    </span>
+                    <span className="Profile-statsItem--first">Views </span>
+                    <span className="Profile-statsItem--second">{stats.views}</span>
                 </li>
                 <li className="Profile-statsItem">
-                    <span className="Profile-statsItem--first">
-                        {statsKeys[2]}
-                    </span>
-                    <span className="Profile-statsItem--second">
-                        {statsValues[2]}
-                    </span>
+                    <span className="Profile-statsItem--first">Likes </span>
+                    <span className="Profile-statsItem--second">{stats.likes} </span>
                 </li>
             </ul>
         </div>
